@@ -1,0 +1,64 @@
+<nav id="navbar">
+  <p>Bienvenido,
+    {{userToShow.first_name}}
+    {{userToShow.last_name}}
+    <br />
+    {{userToShow.email}}
+    <br />
+    Rol:
+    {{userToShow.role}}
+  </p>
+  <input type="hidden" id="cartId" value="{{userToShow.cart}}" />
+  <a href="/products"><button class="navBtn">Ver Productos</button></a>
+  <a href="/chat"><button class="navBtn">Chat</button></a>
+  <form action="/api/users/logout" method="post">
+    <button type="submit">Cerrar sesión</button>
+  </form>
+</nav>
+<h1>Datos del Usuario</h1>
+<div class="userData">
+  <h4>Nombre: </h4>{{userToShow.first_name}}
+  <br />
+  <h4>Apellido: </h4>
+  {{userToShow.last_name}}
+  <br />
+  <h4>E-mail: </h4>
+  {{userToShow.email}}
+  <br />
+  <h4>Edad: </h4>
+  {{userToShow.age}}
+  <br />
+  <h4>Foto de Perfil: </h4>
+  <br />
+  {{userToShow.img}}
+</div>
+<h2>Mi Carrito</h2>
+<br />
+<div class="tableContainer">
+  <table class="productTable">
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Código</th>
+    <th>Precio</th>
+    <th>Cantidad</th>
+    <th>Categoría</th>
+    {{#each cart.products}}
+      <tr>
+        <td>{{this.product.title}}</td>
+        <td>{{this.product.description}}</td>
+        <td>{{this.product.code}}</td>
+        <td>{{this.product.price}}</td>
+        <td>{{this.quantity}}</td>
+        <td>{{this.product.category}}</td>
+        <td><button onclick="deleteFromCart('{{this.product._id}}')">Eliminar
+            producto</button></td>
+      </tr>
+    {{/each}}
+  </table>
+  <br />
+</div>
+<div class="endPurchCont">
+  <button class="endPurchBtn" onclick="endPurchase()">Finalizar Compra</button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/cart.js"></script>

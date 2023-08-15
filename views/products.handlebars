@@ -1,0 +1,62 @@
+<nav id="navbar">
+  <p>Bienvenido,
+    {{user.first_name}}
+    {{user.last_name}}
+    <br />
+    {{user.email}}
+    <br />
+    Rol:
+    {{user.role}}
+  </p>
+  <input type="hidden" id="cartId" value="{{user.cart}}">
+  <a href="/current"><button class="navBtn">Mi Carrito</button></a>
+  <a href="/chat"><button class="navBtn">Chat</button></a>
+  <form action="/api/users/logout" method="post">
+    <button type="submit">Cerrar sesión</button>
+  </form>
+</nav>
+<h1>Listado de Productos</h1>
+<br />
+<h2>Los productos disponibles son:</h2>
+<br />
+<div class="tableContainer">
+  <table class="productTable">
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Código</th>
+    <th>Precio</th>
+    <th>Stock</th>
+    <th>Categoría</th>
+    {{#each prodList.payload}}
+      <tr>
+        <td>{{this._id}}</td>
+        <td>{{this.title}}</td>
+        <td>{{this.description}}</td>
+        <td>{{this.code}}</td>
+        <td>{{this.price}}</td>
+        <td>{{this.stock}}</td>
+        <td>{{this.category}}</td>
+        <td><button onclick="addToCart('{{this._id}}')">Añadir al carrito</button></td>
+      </tr>
+    {{/each}}
+  </table>
+  <br />
+  <div>
+    {{#if prodList.hasPrevPage}}
+      <a
+        href="{{prodList.prevLink}}&limit={{prodList.limit}}&availability={{prodList.availability}}&category={{prodList.category}}&sort={{prodList.sort}}"
+      >← Anterior</a>
+    {{/if}}
+    &nbsp;
+    {{prodList.page}}
+    &nbsp;
+    {{#if prodList.hasNextPage}}
+      <a
+        href="{{prodList.nextLink}}&limit={{prodList.limit}}&availability={{prodList.availability}}&category={{prodList.category}}&sort={{prodList.sort}}"
+      >Siguiente →</a>
+    {{/if}}
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/products.js"></script>

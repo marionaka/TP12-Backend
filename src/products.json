@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Xbox 360 Pro",
+    "description": "Consola Xbox 360 Pro de Microsoft. Color gris. Capacidad de disco de 1 TB. Con 2 controles wireless incluidos.",
+    "code": "XB360P",
+    "price": 120000,
+    "status": true,
+    "stock": 18,
+    "category": "Xbox",
+    "thumbnail": "Sin imagen",
+    "id": 1
+  },
+  {
+    "title": "Xbox One Elite",
+    "description": "Consola Xbox One Elite de Microsoft. Color negro. Capacidad de almacenamiento de 2 TB. Con 1 control wireless Elite incluido.",
+    "code": "XB1E",
+    "price": 220000,
+    "status": true,
+    "stock": 30,
+    "category": "Xbox",
+    "thumbnail": "Sin imagen",
+    "id": 2
+  },
+  {
+    "title": "Xbox Series V",
+    "description": "Consola Xbox Series V de Microsoft. Color plateado. Capacidad de almacenamiento de 1.5 TB. Con 2 controles wireless incluidos.",
+    "code": "XBSERV",
+    "price": 280000,
+    "status": true,
+    "stock": 22,
+    "category": "Xbox",
+    "thumbnail": "Sin imagen",
+    "id": 3
+  },
+  {
+    "title": "Xbox Series Z",
+    "description": "Consola Xbox Series Z de Microsoft. Color dorado. Capacidad de almacenamiento de 2 TB. Con 1 control wireless incluido.",
+    "code": "XBSERZ",
+    "price": 320000,
+    "status": true,
+    "stock": 15,
+    "category": "Xbox",
+    "thumbnail": "Sin imagen",
+    "id": 4
+  },
+  {
+    "title": "PlayStation 3 Pro",
+    "description": "Consola Playstation 3 Pro de Sony. Color plateado. Capacidad de almacenamiento de 1 TB. Con 2 controles wireless incluidos.",
+    "code": "PS3P",
+    "price": 150000,
+    "status": true,
+    "stock": 28,
+    "category": "Playstation",
+    "thumbnail": "Sin imagen",
+    "id": 5
+  },
+  {
+    "title": "PlayStation 4 Pro",
+    "description": "Consola Playstation 4 Pro de Sony. Color dorado. Capacidad de almacenamiento de 2 TB. Con 1 control wireless incluido.",
+    "code": "PS4P",
+    "price": 220000,
+    "status": true,
+    "stock": 55,
+    "category": "Playstation",
+    "thumbnail": "Sin imagen",
+    "id": 6
+  },
+  {
+    "title": "PlayStation 5 Deluxe",
+    "description": "Consola Playstation 5 Deluxe de Sony. Color negro. Capacidad de almacenamiento de 2.5 TB. Con 2 controles wireless incluidos.",
+    "code": "PS5D",
+    "price": 400000,
+    "status": true,
+    "stock": 12,
+    "category": "Playstation",
+    "thumbnail": "Sin imagen",
+    "id": 7
+  },
+  {
+    "title": "Nintendo Wii Ultimate",
+    "description": "Consola Wii Ultimate de Nintendo. Color rojo. Capacidad de almacenamiento de 1 TB. Incluye sensor de movimiento y 4 controles.",
+    "code": "WIITU",
+    "price": 130000,
+    "status": true,
+    "stock": 30,
+    "category": "Nintendo",
+    "thumbnail": "Sin imagen",
+    "id": 8
+  },
+  {
+    "title": "Nintendo Wii-U Plus",
+    "description": "Consola Wii-U Plus de Nintendo. Color azul. Capacidad de almacenamiento de 1.5 TB. Incluye sensor de movimiento y 3 controles.",
+    "code": "WIIUP",
+    "price": 170000,
+    "status": true,
+    "stock": 40,
+    "category": "Nintendo",
+    "thumbnail": "Sin imagen",
+    "id": 9
+  },
+  {
+    "title": "Nintendo Switch Pro",
+    "description": "Consola Switch Pro de Nintendo. Color dorado. Capacidad de almacenamiento de 2 TB. Incluye consola portátil, estuche portátil y 3 controles.",
+    "code": "SWIP",
+    "price": 250000,
+    "status": true,
+    "stock": 35,
+    "category": "Nintendo",
+    "thumbnail": "Sin imagen",
+    "id": 10
+  }
+]
